@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form action="Test.html" method="get">
+        <input type="range" min="10" max="100" step="1" value="10" />
+        <span>Some Text</span>
+
+        <script>
+            document.getElementsByTagName("input")[0].addEventListener("change", function () {
+                document.getElementsByTagName("span")[0].style.fontSize = this.value + "px";
+            })
+        </script>
+    </form>
+</body>
+</html>

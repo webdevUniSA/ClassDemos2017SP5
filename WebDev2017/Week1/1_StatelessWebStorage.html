@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form>
+        <h1>Stateless Solution - Web Storage</h1>
+        <input type="text" id="counter" />
+        <button type="submit" id="myButton">Increment Count!</button>
+        <button type="submit" id="clearButton">Clear Count!</button>
+    </form>
+    <script>
+        // trigger counter on button click
+        // get the button object using the ID
+        // attach a JavaScript event Linstner
+        document.getElementById("myButton").addEventListener("click", function () {
+
+            // get the current count from web storage
+            var count = parseInt(localStorage.getItem("count"));
+
+            // if the textbox is empty, assign the count = 0
+            if (isNaN(count)) count = 0;
+
+            // increment the count
+            count++;
+
+            // Store count in web browser
+            localStorage.setItem("count", count);
+
+        });
+
+        // clear counter on "clear button" click
+        document.getElementById("clearButton").addEventListener("click", function () {
+            localStorage.removeItem("count");
+            document.getElementById("counter").value = localStorage.getItem("count");
+        });
+
+        // assign stored count to textbox each time the page refreshes
+        // note this line of code is not in a method/function and so runs when the page loads
+        document.getElementById("counter").value = localStorage.getItem("count") + "";
+
+
+
+        //TODO Checks
+        //if (typeof (Storage) !== "undefined") {
+        //    // Code for localStorage/sessionStorage.
+        //    document.getElementById("counter").value = localStorage.getItem("count");
+        //} else {
+        //    // Sorry! No Web Storage support..
+        //}
+
+
+    </script>
+</body>
+</html>

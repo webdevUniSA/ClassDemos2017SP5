@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 1 Demo Form Improved</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Improved Form Layout Approach</h2>
+    <p>
+        A good form layout approach involves targeting each input element with its own label element.<br />
+        This is done by giving the input element an <b>id</b> and then pointing the label to the id using the <b>for</b> attribute.<br />
+        The only issue is what happens with radio buttons where there is more than one input for the label!
+    </p>
+    <p>
+        <code>
+            &#60;label <b>for="TBFirstName"</b> &#62;
+            First Name: &#60;/label &#62;<br />
+            &#60;input type="text" name="firstname" <b>id="TBFirstName"</b> /&#62;
+        </code>
+    </p>
+    <br />
+    <form action="FormGET.html" method="get">
+        <label for="TBFirstName">First Name:</label>
+        <input type="text" name="firstname" id="TBFirstName" /><br />
+        <label for="TBLastName">Last Name:</label>
+        <input type="text" name="lastname" id="TBLastName" /><br />
+        <label for="TBPhone">Tel:</label>
+        <input type="tel" name="phone" id="TBPhone" /><br />
+        <label for="TBEmail">Email:</label>
+        <input type="email" name="email" id="TBEmail" /><br />
+        <label for="TBAge">Age:</label>
+        <input type="number" name="age" step="1" id="TBAge" /><br />
+
+        <label for="CBGender">Gender:</label>
+        M<input type="radio" value="male" name="gender" id="CBGender" checked /> F<input type="radio" value="female" name="gender" />
+        <br />
+        <label for="CBActive">Is Active:</label> <input type="checkbox" name="active" id="CBActive" /><br />
+        <label for="DDLState">State:</label> <select name="state" id="DDLState">
+            <option value="SA">SA</option>
+            <option value="Vic">VIC</option>
+            <option value="Nsw">NSW</option>
+            <option value="WA">WA</option>
+            <option value="NT">NT</option>
+            <option value="TAS">TAS</option>
+        </select><br />
+        <input type="submit" value="Input Submit" />
+        <button type="submit">Button Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+</body>
+</html>

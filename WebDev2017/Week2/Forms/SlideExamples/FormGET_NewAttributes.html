@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 1 Demo Form New Attributes</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Best Form Layout Approach With New Attributes</h2>
+    <p>
+        Placeholder and title can be used to help prompt a user on how the form should be completed.<br />
+        The autofocus attribute can be used to initiate the starting point to fill out first<br />
+        The Checked attribute can be used to pre-select a checkbox or radio button.<br />
+        The selected attribute can be used to pre-select specific options in a dropdownlist when available.<br />
+
+    </p>
+    <br />
+    <fieldset>
+        <legend>New User</legend>
+        <form action="FormGET.html" method="get">
+            <label>
+                First Name: <input type="text" name="firstname" placeholder="Your first name. . ." autofocus />
+            </label>
+            <br />
+            <label>
+                Last Name: <input type="text" name="lastname" placeholder="Your last name. . ." />
+            </label>
+            <br />
+            <label>
+                Tel: <input type="tel" name="phone" placeholder="xxxx xxx xxx" />
+            </label><br />
+            <label>Email:<input type="email" name="email" placeholder="skippy@roadkill.com" /></label><br />
+            <label>
+                Age: <input type="number" name="age" step="1" placeholder="Your age (whole year)" />
+            </label><br />
+            <label>
+                Gender: M<input type="radio" value="male" name="gender" checked /> F<input type="radio" value="female" name="gender" checked />
+            </label>
+            <br />
+            <label>Is Active: <input type="checkbox" name="active" checked /></label><br />
+            <label>
+                State: <select name="state" id="DDLState">
+                    <option value="SA">SA</option>
+                    <option value="VIC">VIC</option>
+                    <option selected value="Nsw">NSW</option>
+                    <option value="WA">WA</option>
+                    <option value="NT">NT</option>
+                    <option value="TAS">TAS</option>
+                </select>
+            </label><hr />
+            <input type="submit" value="Input Save" />
+            <button type="submit">Button Save</button>
+            <button type="reset">Clear</button>
+        </form>
+    </fieldset>
+</body>
+</html>

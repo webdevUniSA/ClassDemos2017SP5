@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Demo</title><!-- Tab Title -->
+    <meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <h1>Form Demo</h1>
+    </header>
+    <nav>
+    </nav>
+    <main>
+        <form action="FormDemoClass.html" method="post">
+            <hr />
+            <input type="submit" value="Save" />
+            <button type="submit">Save with Validation</button>
+            <button type="submit" formnovalidate="">Save No Validation</button>
+            <button type="reset">Clear</button>
+            <hr />
+
+
+            First Name:
+            <input type="text" name="firstName" required="" /><br />
+
+            Last Name:
+            <input type="text" name="lastName" placeholder="Last Name.."  title="Last Name"/><br />
+
+
+            Gender:
+            M <input type="radio" name="gender" value="M" />
+            F<input type="radio" name="gender" value="F" />
+            O<input type="radio" name="gender" checked="" value="O" />
+            <br />
+
+
+            Fav Color: Blue
+            <input type="checkbox" name="color" checked="" value="blue" />
+            Green <input type="checkbox" name="color" value="green" />
+            <br />
+
+
+            Fav Browser: <select name="browser" required="">
+                <option value="">Select. . .</option>
+                <option value="IE">IE</option>
+                <option value="FireFox">FireFox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Safari">Safari</option>
+            </select>
+
+            <br />
+            <!-- input slider for numbers-->
+            <!-- set realistic limits, set default age -->
+            Age: <input type="range" min="13" max="90" step="5" name="age" value="25" />
+            <br />
+
+
+            Subjects: <input type="text" name="subject" list="subjectList" />
+            <datalist id="subjectList">
+                <option value="DB Fundamentals"></option>
+                <option value="Web Dev"></option>
+            </datalist>
+
+
+        </form>
+    </main>
+    <footer>
+        &copy; - Web Dev
+    </footer>
+</body>
+</html>

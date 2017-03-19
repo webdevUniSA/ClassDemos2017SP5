@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Demo</title>
+</head>
+<body>
+    <header><h1>Test Form</h1></header>
+    <nav></nav>
+    <main>
+        <form action="TestForm.html" method="get">
+            <label for="TBFirstName">First Name:</label>
+            <input autofocus type="text" name="firstName" id="TBFirstName" required
+                   oninvalid="this.setCustomValidity('Please Enter Your First Name')" /><br />
+            <label for="TBLastName">Last Name:</label>
+            <input type="text" name="lastName" id="TBLastName" required /><br />
+            <label for="RGender">Gender: </label>
+            <label>
+                M <input id="RGender" type="radio" name="gender" value="M" checked />
+            </label>
+            <label>F<input type="radio" name="gender" value="F" /></label>
+            <br />
+            Fav Color: Blue<input type="checkbox" name="color" checked="" value="blue" />
+            Green <input type="checkbox" name="color" value="green" />
+            <br />
+            Fav Browser: <select name="browser" required>
+                <option value="">Select. . .</option>
+                <option value="IE">IE</option>
+                <option value="FireFox">FireFox</option>
+                <option value="Chrome">Chrome</option>
+                <option value="Safari">Safari</option>
+            </select>
+            <br />
+            Age: <input type="number" min="0" max="100" step="5" name="age" value="25" />
+            <br />
+            Subjects: <input type="text" name="subject" list="subjectList" required />
+            <datalist id="subjectList">
+                <option value="DB Fundamentals"></option>
+                <option value="Web Dev"></option>
+            </datalist>
+
+            <hr />
+            <input type="submit" value="Save" />
+            <button type="submit" formnovalidate>Save</button>
+            <button type="reset">Clear</button>
+            <button type="button">Should Do Nothing</button>
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

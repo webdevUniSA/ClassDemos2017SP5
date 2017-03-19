@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 1 Demo Form Improved</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Best Form Layout Approach</h2>
+    <p>The best form layout approach involves nesting (wrapping) each input element in its own label element:</p>
+    <p>
+        <code>
+            &#60;label&#62;<br />
+            <span style="width:60px; display:inline-block"></span>First Name: &#60;input type="text" name="firstname" /&#62;<br />
+            &#60;/label&#62;
+        </code>
+
+    </p>
+    <br />
+    <fieldset>
+        <legend>New User</legend>
+        <form action="FormGET.html" method="get">
+            <label>
+                First Name:<br /> <input type="text" name="firstname" />
+            </label>
+            <br />
+            <label>
+                Last Name:<br /> <input type="text" name="lastname" />
+            </label>
+            <br />
+            <label>
+                Tel:<br /> <input type="tel" name="phone" />
+            </label><br />
+            <label>Email:<br /><input type="email" name="email" /></label><br />
+            <label>
+                Age:<br /> <input type="number" name="age" step="1" />
+            </label><br />
+            <label>
+                Gender:<br /> M<input type="radio" value="male" name="gender" checked /> F<input type="radio" value="female" name="gender" />
+            </label>
+            <br />
+            <label>Is Active: <input type="checkbox" name="active" /></label><br />
+            <label>
+                State:<br /> <select name="state" id="DDLState">
+                    <option value="SA">SA</option>
+                    <option value="Vic">VIC</option>
+                    <option value="Nsw">NSW</option>
+                    <option value="WA">WA</option>
+                    <option value="NT">NT</option>
+                    <option value="TAS">TAS</option>
+                </select>
+            </label><hr />
+            <input type="submit" value="Input Save" />
+            <button type="submit">Button Save</button>
+            <button type="reset">Clear</button>
+        </form>
+    </fieldset>
+</body>
+</html>

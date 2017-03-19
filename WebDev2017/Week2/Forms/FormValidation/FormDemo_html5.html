@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Form with Validation</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>HTML5 Form with Validation</h2>
+    <p>
+        This example uses a standard HTML5 Form element and input elements.  Special attributes have been added to each element to prompt the user to correctly fill out the information:
+    </p>
+    <ul>
+        <li><b>placeholder</b> - to prompt the user what they should enter</li>
+        <li><b>required</b> - for fields that cannot be left blank</li>
+        <li><b>setCustomValidity('')</b> - for custom validation error messages</li>
+
+    </ul>
+    <form method="get" action="FormDemo_html5.html">
+        <label>
+            Name:<br />
+            <input type="text" id="TBName" name="userName" required autofocus
+                   placeholder="Your name. . ."
+                   oninvalid="this.setCustomValidity('Yo!  Please Enter a name')" />
+        </label><br />
+
+        <label>
+            Email:<br />
+            <input type="email" id="TBEmail" name="userEmail" required
+                   placeholder="Your email. . ."
+                   oninvalid="this.setCustomValidity('Please Enter a valid email')" />
+        </label><br />
+
+        <label>
+            Phone:<br />
+            <input type="tel" id="TBPhone" name="userPhone" required
+                   placeholder="your phone number. . ."
+                   oninvalid="this.setCustomValidity('Please Enter a valid telephone number')" />
+        </label><br />
+        <label>
+            Browser<br />
+            <input list="browsers" id="TBBrowser" name="userBrowser" />
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </label>
+
+
+        <input type="submit" value="Save" />
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

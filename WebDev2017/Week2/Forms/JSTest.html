@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <span id="testText">Font Size</span><br />
+    Font Size <input type="range" min="14" max="40" step="2" name="size" value="14" />
+
+    <script>
+        document.getElementsByTagName("input")[0].addEventListener("change", function () {
+            document.getElementById("testText").style.fontSize = this.value + "px";
+        })
+
+        // same method using getElementsByName
+        // note the visual studio does not include the correct promps for this
+        // it insists on using valueOf() when the .value property is valid.
+        /*
+        document.getElementsByName("size")[0].addEventListener("change", function () {
+            console.log(document.getElementsByName("size")[0].value);
+            console.log(this.value);
+        })
+        */
+    </script>
+
+
+</body>
+</html>

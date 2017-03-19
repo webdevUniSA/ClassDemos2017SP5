@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebDev2017.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%: Page.Title + "" %>  Web Dev 2017</title>
+    <asp:ContentPlaceHolder ID="CPHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <img src="/" />
+    </header>
+    <nav>
+        <ul>
+            <li><a runat="server" href="~/Week2/WebForms/TestWebForm2.aspx">Test Web Form 2</a> </li>
+            <li><a href="/Week2/WebForms/TestWebForm2.aspx">Test Web Form 2</a></li>
+            <li><a href="/Default.aspx">Default</a></li>
+            <li><a href="Default.aspx">Broken Default</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="CPMainContent" runat="server">
+                <h1>Page Under Construction</h1>
+            </asp:ContentPlaceHolder>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

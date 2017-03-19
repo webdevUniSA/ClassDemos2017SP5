@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 1 Demo Form</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+    <h2>Example Form Elements</h2>
+    <p>
+        Below is an example of the various types of elements that may appear in a form.<br />
+        The approach used is not considered user friendly or accessible because it lacks labels.
+    </p>
+    <p>
+        <code>
+            First Name:  &#60;input type="text" name="firstname" /&#62;
+        </code>
+    </p><br />
+    <form action="FormGET.html" method="get">
+        First Name: <input type="text" name="firstname" /><br />
+        Last Name: <input type="text" name="lastname" /><br />
+        Tel: <input type="tel" name="phone" /><br />
+        Email: <input type="email" name="email" /><br />
+        Age: <input type="number" name="age" step="1" /><br />
+        Gender: M<input type="radio" value="male" name="gender" checked /> F<input type="radio" value="female" name="gender" /><br />
+        Is Active: <input type="checkbox" name="active" /><br />
+        State: <select name="state">
+            <option value="SA">SA</option>
+            <option value="Vic">VIC</option>
+            <option value="Nsw">NSW</option>
+            <option value="WA">WA</option>
+            <option value="NT">NT</option>
+            <option value="TAS">TAS</option>
+        </select><br />
+        <input type="submit" value="Input Submit" />
+        <button type="submit">Button Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+</body>
+</html>

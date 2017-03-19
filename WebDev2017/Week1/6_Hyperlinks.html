@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyperlinks</title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-size: 1.4em;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <hgroup>
+        <h2>Hyperlink Examples</h2>
+        <h3>Relative URL Links</h3>
+    </hgroup>
+    <p>The current page is in RootFolder/Week1</p>
+
+    <ul>
+        <li>To move from the <b>current folder</b> one folder toward the root, use "../fileName" infront of the linked page</li>
+        <li>To move one folder further into the <b>current folder</b> use "/nextFolderName/fileName" infront of the linked page</li>
+        <li>To return to the root directory use "/fileName" as the link</li>
+        <li>To get the default page of the root directory use "/" as the link</li>
+
+    </ul>
+    <a href="../Index.html">Link to Demo HTML</a> href="../Index.html"<br />
+    <a href="/Index.html">Link to Demo HTML</a> href="/Index.html"<br />
+    <a href="../">Link to Root Directory</a> href="../"<br />
+    <a href="../../../">Link past Root Directory</a> href="../../../" <br />
+    <a href="/">Quick link to Root Directory</a> href="/"
+    <br />
+
+    <h3>Absolute URL Links</h3>
+    <p>
+        Absolute URLs specify exactly where on the web a page can be located.<br />
+        This generally includes the protocol and world wide web: http://www.domain.com
+    </p>
+
+    <a href="http://www.google.com">http://www.Google.com</a><br />
+    <a href="http://www.bunnings.com.au">http://www.Bunnings.com</a>
+</body>
+</html>

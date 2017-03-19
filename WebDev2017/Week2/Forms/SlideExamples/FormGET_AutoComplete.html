@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Week 1 Demo Form Auto-Complete</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Best Form Layout With Auto-Complete</h2>
+    <p>
+        Add the attribute <b>autocomplete="on"</b> to a textbox, then nominate the <b>list</b> name to link to.<br />
+        Lastly, create a <b>datalist</b> of options similar to those found in a dropdownlist!
+
+    </p>
+    <br />
+    <fieldset>
+        <legend>New User</legend>
+        <form action="FormGET.html" method="get">
+            <label>
+                First Name: <input type="text" name="firstname" placeholder="Your first name. . ." autofocus />
+            </label>
+            <br />
+            <label>
+                Last Name: <input type="text" name="lastname" placeholder="Your last name. . ." />
+            </label>
+            <br />
+            <label>
+                Favourite Browser: <input type="text" list="browsers" name="browser" placeholder="type or select" autocomplete="on" />
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </label><br />
+            <hr />
+            <input type="submit" value="Input Save" />
+            <button type="submit">Button Save</button>
+            <button type="reset">Clear</button>
+        </form>
+    </fieldset>
+</body>
+</html>
