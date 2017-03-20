@@ -5,6 +5,11 @@
 <html>
 <head runat="server">
     <title><%: Page.Title + "" %>  Web Dev 2017</title>
+    <style>
+        body, input, select {
+            font-size:1.3em;
+        }
+    </style>
     <asp:ContentPlaceHolder ID="CPHead" runat="server">
     </asp:ContentPlaceHolder>
 </head>

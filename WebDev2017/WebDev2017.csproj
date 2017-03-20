@@ -66,12 +66,32 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CustomerDB.ldf">
+      <DependentUpon>CustomerDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\CustomerDB.mdf" />
     <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="Week2\Forms\JSTest.html" />
     <Content Include="Week2\WebForms\TestWebForm.aspx" />
     <Content Include="Week2\WebForms\TestWebForm2.aspx" />
     <Content Include="Week2\WebForms\WebFormDemoClass.aspx" />
+    <Content Include="Week4\1SimpleDataBinding\a_HTMLTextboxes.aspx" />
+    <Content Include="Week4\1SimpleDataBinding\b_ReadingValues.aspx" />
+    <Content Include="Week4\1SimpleDataBinding\c_SingleValueDataBinding.aspx" />
+    <Content Include="Week4\2BasicDynamicPage\a_BasicDBAccess.aspx" />
+    <Content Include="Week4\2BasicDynamicPage\b_AutomatedTable.aspx" />
+    <Content Include="Week4\2BasicDynamicPage\c_AutomatedDataAccess.aspx" />
+    <Content Include="Week4\2BasicDynamicPage\d_BasicUpdate.aspx" />
+    <Content Include="Week4\2BasicDynamicPage\e_SqlDataSourceParameters.aspx" />
+    <Content Include="Week4\2BasicDynamicPage\f_SinglePageApplication.aspx" />
+    <Content Include="Week4\3DataControls\a_FormViewNoBinding.aspx" />
+    <Content Include="Week4\3DataControls\b_FormViewDataBinding.aspx" />
+    <Content Include="Week4\3DataControls\c_SinglePageApplication.aspx" />
+    <Content Include="Week4\DataValues.aspx" />
+    <Content Include="Week4\FormView.aspx" />
+    <Content Include="Week4\FormViewTest.aspx" />
+    <Content Include="Week4\HTMLTest.aspx" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -174,9 +194,120 @@
     <Compile Include="Week2\WebForms\WebFormDemoClass.aspx.designer.cs">
       <DependentUpon>WebFormDemoClass.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Week4\1SimpleDataBinding\a_HTMLTextboxes.aspx.cs">
+      <DependentUpon>a_HTMLTextboxes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\1SimpleDataBinding\a_HTMLTextboxes.aspx.designer.cs">
+      <DependentUpon>a_HTMLTextboxes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\1SimpleDataBinding\b_ReadingValues.aspx.cs">
+      <DependentUpon>b_ReadingValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\1SimpleDataBinding\b_ReadingValues.aspx.designer.cs">
+      <DependentUpon>b_ReadingValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\1SimpleDataBinding\c_SingleValueDataBinding.aspx.cs">
+      <DependentUpon>c_SingleValueDataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\1SimpleDataBinding\c_SingleValueDataBinding.aspx.designer.cs">
+      <DependentUpon>c_SingleValueDataBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\a_BasicDBAccess.aspx.cs">
+      <DependentUpon>a_BasicDBAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\a_BasicDBAccess.aspx.designer.cs">
+      <DependentUpon>a_BasicDBAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\b_AutomatedTable.aspx.cs">
+      <DependentUpon>b_AutomatedTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\b_AutomatedTable.aspx.designer.cs">
+      <DependentUpon>b_AutomatedTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\c_AutomatedDataAccess.aspx.cs">
+      <DependentUpon>c_AutomatedDataAccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\c_AutomatedDataAccess.aspx.designer.cs">
+      <DependentUpon>c_AutomatedDataAccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\d_BasicUpdate.aspx.cs">
+      <DependentUpon>d_BasicUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\d_BasicUpdate.aspx.designer.cs">
+      <DependentUpon>d_BasicUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\e_SqlDataSourceParameters.aspx.cs">
+      <DependentUpon>e_SqlDataSourceParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\e_SqlDataSourceParameters.aspx.designer.cs">
+      <DependentUpon>e_SqlDataSourceParameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\f_SinglePageApplication.aspx.cs">
+      <DependentUpon>f_SinglePageApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\2BasicDynamicPage\f_SinglePageApplication.aspx.designer.cs">
+      <DependentUpon>f_SinglePageApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\3DataControls\a_FormViewNoBinding.aspx.cs">
+      <DependentUpon>a_FormViewNoBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\3DataControls\a_FormViewNoBinding.aspx.designer.cs">
+      <DependentUpon>a_FormViewNoBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\3DataControls\b_FormViewDataBinding.aspx.cs">
+      <DependentUpon>b_FormViewDataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\3DataControls\b_FormViewDataBinding.aspx.designer.cs">
+      <DependentUpon>b_FormViewDataBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\3DataControls\c_SinglePageApplication.aspx.cs">
+      <DependentUpon>c_SinglePageApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\3DataControls\c_SinglePageApplication.aspx.designer.cs">
+      <DependentUpon>c_SinglePageApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\DataValues.aspx.cs">
+      <DependentUpon>DataValues.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\DataValues.aspx.designer.cs">
+      <DependentUpon>DataValues.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\FormView.aspx.cs">
+      <DependentUpon>FormView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\FormView.aspx.designer.cs">
+      <DependentUpon>FormView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\FormViewTest.aspx.cs">
+      <DependentUpon>FormViewTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\FormViewTest.aspx.designer.cs">
+      <DependentUpon>FormViewTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week4\HTMLTest.aspx.cs">
+      <DependentUpon>HTMLTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week4\HTMLTest.aspx.designer.cs">
+      <DependentUpon>HTMLTest.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Week2\MasterPages\" />
   </ItemGroup>
