@@ -2,7 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHead" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="CPMainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CPMain" runat="server">
     <asp:FormView runat="server" DataSourceID="SDSCustomer" DataKeyNames="customerID">
         <ItemTemplate>
             customerID:

@@ -66,12 +66,30 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ClassDB.mdf" />
+    <Content Include="App_Data\ClassDB_log.ldf">
+      <DependentUpon>ClassDB.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\CustomerDB.ldf">
       <DependentUpon>CustomerDB.mdf</DependentUpon>
     </Content>
     <Content Include="App_Data\CustomerDB.mdf" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\Reset.css">
+      <DependentUpon>Reset.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\Reset.min.css">
+      <DependentUpon>Reset.css</DependentUpon>
+    </Content>
     <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Week2\Forms\JSTest.html" />
     <Content Include="Week2\WebForms\TestWebForm.aspx" />
     <Content Include="Week2\WebForms\TestWebForm2.aspx" />
@@ -92,6 +110,45 @@
     <Content Include="Week4\FormView.aspx" />
     <Content Include="Week4\FormViewTest.aspx" />
     <Content Include="Week4\HTMLTest.aspx" />
+    <Content Include="Week5\Bootstrap\BootstrapDemo.aspx" />
+    <Content Include="Week5\CSS_Selectors\SelectorDemos.aspx" />
+    <Content Include="Week5\CSS_Selectors\Test.html" />
+    <Content Include="Week5\DataBinding.aspx" />
+    <Content Include="Week5\Default.aspx" />
+    <Content Include="Week5\Gradients.aspx" />
+    <Content Include="Week5\Layouts\Element\1DisplayProperty.aspx" />
+    <Content Include="Week5\Layouts\Element\2DisplayProperty.aspx" />
+    <Content Include="Week5\Layouts\Element\3DisplayProperty.aspx" />
+    <Content Include="Week5\Layouts\Element\4ImageFloat.aspx" />
+    <Content Include="Week5\Layouts\Element\Default.aspx" />
+    <Content Include="Week5\Layouts\Legacy\1Table.aspx" />
+    <Content Include="Week5\Layouts\Legacy\2TableVsDiv.aspx" />
+    <Content Include="Week5\Layouts\Legacy\3FloatedDivs.aspx" />
+    <Content Include="Week5\Layouts\Legacy\4PositionedDivs.aspx" />
+    <Content Include="Week5\Layouts\Legacy\Default.aspx" />
+    <Content Include="Week5\Layouts\Modern\1Html5SemanticLayout.aspx" />
+    <Content Include="Week5\Layouts\Modern\2Html5FlexBox.aspx" />
+    <Content Include="Week5\Layouts\Modern\3HTMLGridLayout.aspx" />
+    <Content Include="Week5\Layouts\Modern\Default.aspx" />
+    <Content Include="Week5\NthSelectors.aspx" />
+    <Content Include="Week5\Opacity.aspx" />
+    <Content Include="Week5\PseudoSelectors.aspx" />
+    <Content Include="Week5\ResetVsNormalise\ResetVsNormalise.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\Reset.scss" />
+    <Content Include="Week5\RoundCorners.aspx" />
+    <Content Include="Week5\SelectorsCombinators.aspx" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
@@ -306,8 +363,184 @@
     <Compile Include="Week4\HTMLTest.aspx.designer.cs">
       <DependentUpon>HTMLTest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Week5\Bootstrap\BootstrapDemo.aspx.cs">
+      <DependentUpon>BootstrapDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Bootstrap\BootstrapDemo.aspx.designer.cs">
+      <DependentUpon>BootstrapDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\CSS_Selectors\SelectorDemos.aspx.cs">
+      <DependentUpon>SelectorDemos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\CSS_Selectors\SelectorDemos.aspx.designer.cs">
+      <DependentUpon>SelectorDemos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\DataBinding.aspx.cs">
+      <DependentUpon>DataBinding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\DataBinding.aspx.designer.cs">
+      <DependentUpon>DataBinding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Gradients.aspx.cs">
+      <DependentUpon>Gradients.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Gradients.aspx.designer.cs">
+      <DependentUpon>Gradients.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\1DisplayProperty.aspx.cs">
+      <DependentUpon>1DisplayProperty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\1DisplayProperty.aspx.designer.cs">
+      <DependentUpon>1DisplayProperty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\2DisplayProperty.aspx.cs">
+      <DependentUpon>2DisplayProperty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\2DisplayProperty.aspx.designer.cs">
+      <DependentUpon>2DisplayProperty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\3DisplayProperty.aspx.cs">
+      <DependentUpon>3DisplayProperty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\3DisplayProperty.aspx.designer.cs">
+      <DependentUpon>3DisplayProperty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\4ImageFloat.aspx.cs">
+      <DependentUpon>4ImageFloat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\4ImageFloat.aspx.designer.cs">
+      <DependentUpon>4ImageFloat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Element\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\1Table.aspx.cs">
+      <DependentUpon>1Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\1Table.aspx.designer.cs">
+      <DependentUpon>1Table.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\2TableVsDiv.aspx.cs">
+      <DependentUpon>2TableVsDiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\2TableVsDiv.aspx.designer.cs">
+      <DependentUpon>2TableVsDiv.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\3FloatedDivs.aspx.cs">
+      <DependentUpon>3FloatedDivs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\3FloatedDivs.aspx.designer.cs">
+      <DependentUpon>3FloatedDivs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\4PositionedDivs.aspx.cs">
+      <DependentUpon>4PositionedDivs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\4PositionedDivs.aspx.designer.cs">
+      <DependentUpon>4PositionedDivs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Legacy\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\1Html5SemanticLayout.aspx.cs">
+      <DependentUpon>1Html5SemanticLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\1Html5SemanticLayout.aspx.designer.cs">
+      <DependentUpon>1Html5SemanticLayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\2Html5FlexBox.aspx.cs">
+      <DependentUpon>2Html5FlexBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\2Html5FlexBox.aspx.designer.cs">
+      <DependentUpon>2Html5FlexBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\3HTMLGridLayout.aspx.cs">
+      <DependentUpon>3HTMLGridLayout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\3HTMLGridLayout.aspx.designer.cs">
+      <DependentUpon>3HTMLGridLayout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Layouts\Modern\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\NthSelectors.aspx.cs">
+      <DependentUpon>NthSelectors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\NthSelectors.aspx.designer.cs">
+      <DependentUpon>NthSelectors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\Opacity.aspx.cs">
+      <DependentUpon>Opacity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\Opacity.aspx.designer.cs">
+      <DependentUpon>Opacity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\PseudoSelectors.aspx.cs">
+      <DependentUpon>PseudoSelectors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\PseudoSelectors.aspx.designer.cs">
+      <DependentUpon>PseudoSelectors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\ResetVsNormalise\ResetVsNormalise.aspx.cs">
+      <DependentUpon>ResetVsNormalise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\ResetVsNormalise\ResetVsNormalise.aspx.designer.cs">
+      <DependentUpon>ResetVsNormalise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\RoundCorners.aspx.cs">
+      <DependentUpon>RoundCorners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\RoundCorners.aspx.designer.cs">
+      <DependentUpon>RoundCorners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week5\SelectorsCombinators.aspx.cs">
+      <DependentUpon>SelectorsCombinators.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week5\SelectorsCombinators.aspx.designer.cs">
+      <DependentUpon>SelectorsCombinators.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Images\" />
     <Folder Include="Models\" />
     <Folder Include="Week2\MasterPages\" />
   </ItemGroup>

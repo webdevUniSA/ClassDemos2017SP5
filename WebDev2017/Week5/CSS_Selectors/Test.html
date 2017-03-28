@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        h1:not(.heading) {
+            border: 1px solid #000;
+        }
+
+        .heading.red {
+            color: red;
+        }
+
+        .heading {
+            color: green;
+        }
+
+        p {float:left;}
+        p:after {
+            content: "";
+            clear:both;
+        }
+
+
+        [data-name="jane"] {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading red">RED Heading</h1>
+    <h1 data-name="jane">Normal Heading</h1>
+    <p>P1</p>
+    <p>P2</p>
+    <p>P3</p>
+</body>
+</html>

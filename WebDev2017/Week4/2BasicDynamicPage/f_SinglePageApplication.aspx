@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="f_SinglePageApplication.aspx.cs" Inherits="WebDev2017.Week4.BasicDynamicPage.f_SinglePageApplication" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHead" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="CPMainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CPMain" runat="server">
      <div runat="server" id="divView">
             <h2>View Record</h2>
             <asp:Button ID="BEdit" runat="server" Text="Edit" OnClick="Button_Click" />

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="b_FormViewDataBinding.aspx.cs" Inherits="WebDev2017.Week4.DataControls.b_FormViewDataBinding" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHead" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="CPMainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CPMain" runat="server">
    <asp:FormView runat="server" ID="FVCustomer" DataKeyNames="customerID" DataSourceID="SDSCustomer">
        <EditItemTemplate>
            customerID:

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="e_SqlDataSourceParameters.aspx.cs" Inherits="WebDev2017.Week4.BasicDynamicPage.e_SqlDataSourceParameters" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHead" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="CPMainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CPMain" runat="server">
     <h1>SqlDataSource Demo Page</h1>
     <p>This page shows various ways to pass values from a HTML Form to an SqlDataSource without the need to write any C# code.
         <br />To see the different methods you will need to look at the SelectCommand property of each SqlDataSource in the Properties window.

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="c_SinglePageApplication.aspx.cs" Inherits="WebDev2017.Week4.DataControls.c_SinglePageApplication" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHead" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="CPMainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CPMain" runat="server">
      <asp:FormView ID="FormView1" EnableViewState="False" runat="server" DataKeyNames="customerID" DataSourceID="SDSCustomer">
             <EditItemTemplate>
                 firstName:

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="HTML Test" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HTMLTest.aspx.cs" Inherits="WebDev2017.Week4.HTMLTest" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="CPHead" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="CPMainContent" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="CPMain" runat="server">
        Search: <input type="text" name="firstName" placeholder="First Name Search. . . " />
     <asp:TextBox runat="server" ID="TBFirstName" placeholder="First Name Search..."></asp:TextBox><br />
      <input type="submit" value="Post Back Page" />
