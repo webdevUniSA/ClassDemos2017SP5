@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="../../Scripts/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <button>Click Me</button>
+
+    <ul>
+        <li>Item 1</li>
+    </ul>
+
+    <script>
+        /*
+        document.getElementsByTagName("button")[0].addEventListener("click", function (e) {
+            var count = (document.getElementsByTagName("ul")[0].childElementCount);
+            var node = document.createElement("LI");
+            node.innerText = "Item " + ++count ;
+            document.getElementsByTagName("ul")[0].appendChild(node);
+        })
+
+        document.getElementsByTagName("body")[0].addEventListener("click", function (e) {
+            if (e.target && e.target.nodeName == "LI") {
+                alert(e.target.innerText + " clicked");
+                e.target.style.color = "red";
+            }
+        })
+        */
+
+
+
+        $("button").on("click", function () {
+            var count = $("ul li").length;
+            // $("ul").append("<li>").children("li").last().text("Item " + ++count) ;
+            $("ul").append("<li>").find("li:last-child").text("Item " + ++count);
+        })
+    </script>
+
+</body>
+</html>

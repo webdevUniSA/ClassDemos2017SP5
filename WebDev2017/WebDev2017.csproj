@@ -130,6 +130,7 @@
     <Content Include="Week5\Layouts\Modern\2Html5FlexBox.aspx" />
     <Content Include="Week5\Layouts\Modern\3HTMLGridLayout.aspx" />
     <Content Include="Week5\Layouts\Modern\Default.aspx" />
+    <Content Include="Week5\N-thSelectors.html" />
     <Content Include="Week5\NthSelectors.aspx" />
     <Content Include="Week5\Opacity.aspx" />
     <Content Include="Week5\PseudoSelectors.aspx" />
@@ -145,6 +146,25 @@
     <Content Include="Content\Reset.scss" />
     <Content Include="Week5\RoundCorners.aspx" />
     <Content Include="Week5\SelectorsCombinators.aspx" />
+    <Content Include="Week6\Animations.html" />
+    <Content Include="Week6\Borders.aspx" />
+    <Content Include="Week6\BoxSizing.aspx" />
+    <Content Include="Week6\CssDemo.aspx" />
+    <Content Include="Week6\CSSDemo.html" />
+    <Content Include="Week6\Default.aspx" />
+    <Content Include="Week6\JavaScript\JavaScriptTest.html" />
+    <Content Include="Week6\JavaScript\JQueryListnerVsDelegate.aspx" />
+    <Content Include="Week6\JavaScript\JQueryMethods.aspx" />
+    <Content Include="Week6\JavaScript\JSEventListner.aspx" />
+    <Content Include="Week6\JavaScript\JSHoisting.aspx" />
+    <Content Include="Week6\JavaScript\JSVariables.aspx" />
+    <Content Include="Week6\JavaScript\JSvsJQuery.aspx" />
+    <Content Include="Week6\JavaScript\VariableDeclaration.aspx" />
+    <Content Include="Week6\JQuery.html" />
+    <Content Include="Week6\JS_JQueryDemo.html" />
+    <Content Include="Week6\Modal.aspx" />
+    <Content Include="Week6\Tests\HtmlPage1.html" />
+    <Content Include="Week6\Tests\HtmlPage2.html" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
@@ -537,6 +557,90 @@
     </Compile>
     <Compile Include="Week5\SelectorsCombinators.aspx.designer.cs">
       <DependentUpon>SelectorsCombinators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\Borders.aspx.cs">
+      <DependentUpon>Borders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\Borders.aspx.designer.cs">
+      <DependentUpon>Borders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\BoxSizing.aspx.cs">
+      <DependentUpon>BoxSizing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\BoxSizing.aspx.designer.cs">
+      <DependentUpon>BoxSizing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\CssDemo.aspx.cs">
+      <DependentUpon>CssDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\CssDemo.aspx.designer.cs">
+      <DependentUpon>CssDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JQueryListnerVsDelegate.aspx.cs">
+      <DependentUpon>JQueryListnerVsDelegate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JQueryListnerVsDelegate.aspx.designer.cs">
+      <DependentUpon>JQueryListnerVsDelegate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JQueryMethods.aspx.cs">
+      <DependentUpon>JQueryMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JQueryMethods.aspx.designer.cs">
+      <DependentUpon>JQueryMethods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSEventListner.aspx.cs">
+      <DependentUpon>JSEventListner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSEventListner.aspx.designer.cs">
+      <DependentUpon>JSEventListner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSHoisting.aspx.cs">
+      <DependentUpon>JSHoisting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSHoisting.aspx.designer.cs">
+      <DependentUpon>JSHoisting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSVariables.aspx.cs">
+      <DependentUpon>JSVariables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSVariables.aspx.designer.cs">
+      <DependentUpon>JSVariables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSvsJQuery.aspx.cs">
+      <DependentUpon>JSvsJQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\JSvsJQuery.aspx.designer.cs">
+      <DependentUpon>JSvsJQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\JavaScript\VariableDeclaration.aspx.cs">
+      <DependentUpon>VariableDeclaration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\JavaScript\VariableDeclaration.aspx.designer.cs">
+      <DependentUpon>VariableDeclaration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Week6\Modal.aspx.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Week6\Modal.aspx.designer.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

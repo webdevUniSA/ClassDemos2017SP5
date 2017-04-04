@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        div.container {
+            display: -ms-flexbox;
+            -ms-flex-pack: justify;
+        }
+
+            div.container div {
+                border: 2px solid #000;
+                margin: 10px;
+                width: 30%;
+                -ms-flex: 1;
+                height: 100px;
+            }
+
+                div.container div:nth-child(4n + 1) {
+                    background-color: red;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

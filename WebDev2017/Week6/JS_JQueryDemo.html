@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <button class="button" id="button">Click Me!</button>
+    <script>
+
+        function $(elem) {
+            if (elem.indexOf("#") == 0) {
+                // trim the "#" from the selector
+                return document.getElementById(elem.substring(1));
+            }
+
+            else if (elem.indexOf(".") == 0) {
+                // trim the "." from the selector
+                return document.getElementsByClassName(elem.substring(1))[0];
+            }
+            else {
+                return document.getElementsByTagName(elem)[0];
+            }
+        }
+        // JQuery like selector
+        $("#button").addEventListener("click", function () {
+            alert("button clicked");
+        })
+    </script>
+</body>
+</html>

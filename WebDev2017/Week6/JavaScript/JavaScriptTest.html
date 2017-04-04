@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var number = 1;
+        var float = 1.1;
+        var string = "some text";
+        var stringNo = "1";
+        var bool = true;
+        var empty = null;
+        var undefined;
+
+        console.log("number: " + number);
+        console.log("float: " + (float + number));
+        console.log("string: " + string);
+        console.log("stringNo: " + stringNo);
+        console.log("Addition: " + (number +  parseInt(stringNo)));
+        console.log("empty: " + empty);
+        console.log("undefined: " + undefined);
+
+        addNumbers(number, number);
+      //  addNumbersV2(number, number);
+
+        function addNumbers(arg1, arg2) {
+            console.log("Add Numbers: " + (arg1 + arg2));
+            return arg1 + arg2;
+        }
+
+
+        var addNumbersV2 = function (arg1, arg2) {
+            console.log("Add Numbers: " + (arg1 + arg2));
+            return arg1 + arg2;
+        }
+
+        addNumbersV3(number, number);
+        function addNumbersV3() {
+            console.log("Add Numbers: " + (arguments[0] + arguments[1]));
+            return arguments[0] + arguments[1];
+
+        }
+
+        addNumbersV2(number, number);
+
+    </script>
+    <script>
+        document.getElementsByTagName("body")[0].addEventListener("click", function (e) {
+            if (e.target && e.target.nodeName == "BUTTON") {
+                var count = document.getElementsByTagName("li").length;
+                var newNode = document.createElement("LI");
+                newNode.appendChild(document.createTextNode("Item " + ++count));
+                document.getElementsByTagName("ul")[0].appendChild(newNode);
+            }
+        })
+
+        document.getElementsByTagName("body")[0].addEventListener("click", function (e) {
+            if (e.target && e.target.nodeName == "LI") {
+                alert(e.target.innerText);
+            }
+        });
+
+
+     
+    </script>
+
+    <button>Click Me</button>
+    <ul>
+        <li class="someClass">Item 1</li>
+    </ul>
+    <script>
+        function $(elem) {
+            if (elem.indexOf(".") == 0) { return document.getElementsByClassName(elem)[0]; }
+            else if (elem.indexOf("#") == 0) { return document.getElementById(elem); }
+            else { return document.getElementsByTagName(elem)[0]; }
+        }
+
+
+        alert($(".someClass"));
+    </script>
+</body>
+</html>

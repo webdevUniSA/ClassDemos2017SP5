@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        body {
+            font-size: 2em;
+        }
+
+        div.div1, div.div2 {
+            border: 1px solid #000;
+            width: 50%;
+            height: 100px;
+        }
+
+        div.div1 {
+            background-color: red;
+            /*transition:all 2s;*/
+            transition: font-size 2s, background-color 5s, transform 1s;
+        }
+
+            div.div1:hover {
+                font-size: 4em;
+                background-color: rgba(255,0,0,.5);
+                transform: translate(100px, 0);
+            }
+
+        div.div2 {
+            background-color: red;
+        }
+
+            div.div2:hover {
+                animation-name: myAnimation;
+                animation-duration: 5s;
+                animation-timing-function: ease-in-out;
+            }
+
+        @keyframes myAnimation {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+            }
+
+            100% {
+                font-size: 4em;
+                background-color: rgba(255,0,0,.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Some Text in Div</div>
+    <div class="div2">Some Text in Div</div>
+</body>
+</html>
